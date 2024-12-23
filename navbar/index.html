@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            height: 100vh;
+            margin: 20px 0;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        .section:nth-child(even) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">My Website</div>
+        <div class="nav-links">
+            <a href="#section1">Home</a>
+            <a href="#section2">About</a>
+            <a href="#section3">Services</a>
+            <a href="#section4">Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="section1" class="section">
+            <h1>Home</h1>
+            <p>Welcome to the home section!</p>
+        </div>
+        <div id="section2" class="section">
+            <h1>About</h1>
+            <p>This is the about section!</p>
+        </div>
+        <div id="section3" class="section">
+            <h1>Services</h1>
+            <p>Explore our services!</p>
+        </div>
+        <div id="section4" class="section">
+            <h1>Contact</h1>
+            <p>Get in touch with us!</p>
+        </div>
+    </div>
+</body>
+</html>
